@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Aquire";
+  src: url("../styles/fonts/Aquire-BW0ox.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Aquire-Light";
+  src: url("../styles/fonts/AquireLight-YzE0o.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../styles/fonts/Inter-Light.ttf");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter;
+}
+
+:root {
+  --primary-color: #029c59;
+  --background-color: #fff;
+  --primary-text-color: #000;
+  --secondary-text-color: #fff;
+}
+
+
+.default-bg {
+  background: var(--primary-color);
+}
+
+.gallery-bg {
+  background-image: url("../public/images/gallerybanner.png");
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1.5rem 8rem;
+}
+
+/* found this reusable enough to put into globals, feel free
+to make your own version of this if you need it */
+.title {
+  font-size: 600%;
+  margin-top: 0;
+  font-family: Aquire;
+}
+
+.content {
+  text-align: left;
+  padding: 0 5rem;
+  width: 60%;
+}
+
+

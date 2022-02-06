@@ -1,0 +1,29 @@
+.sponsorDiv {
+  height: 100vh;
+  background-color: #fff;
+  text-align: left;
+  padding: 6rem 4rem;
+  color: #000;
+}
+
+.title {
+  font-size: 600%;
+  margin: 0;
+  text-shadow: -4px 3px 3px #06ce77;
+  padding: 0 3rem 0 0;
+  font-family: Aquire;
+}
+
+.logos {
+    text-align: center;
+}
+
+.logo {
+    margin: 4rem;
+    width: 400px;
+}
+
+.smallPlanet {
+    margin: 4rem;
+    width: 200px;
+}

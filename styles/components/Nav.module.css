@@ -1,0 +1,83 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #000;
+  padding: 0 2rem !important;
+  color: #fff;
+  width: 100%;
+  border-radius: 35px;
+  font-family: Aquire-Light;
+}
+
+.home {
+  text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+  animation: glitch 2000ms infinite;
+}
+
+.navItem {
+  margin-left: 1rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  transition: 200ms ease;
+}
+
+.navItem:hover {
+  background-color: #3f3c3f;
+  cursor: pointer;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  7% {
+    text-shadow: 0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      -0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  25% {
+    text-shadow: 0.05em -0.05em 0 rgba(255, 0, 0, 0.75),
+      0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  75% {
+    text-shadow: -0.025em -0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), -0.025 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
