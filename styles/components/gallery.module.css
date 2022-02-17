@@ -33,7 +33,8 @@
 .gridImages{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 25px;
+  padding: 45px;
+  padding-top: 35px;
   gap: 20px;
 }
 
