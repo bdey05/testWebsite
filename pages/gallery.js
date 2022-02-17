@@ -11,7 +11,7 @@ export default function Gallery() {
 
   const array2 = []
   for (let i = 13; i <= 22; i++){
-    array2.push(`/images/gallery/img${i}.png`)
+    array2.push(`/images/gallery/img${i}.JPG`)
   }
 
   return (
@@ -20,9 +20,25 @@ export default function Gallery() {
       <div className={galleryStyles.mainBody}>
         <div className={galleryStyles.gridContainer}>
           <h2 className={galleryStyles.gridTitle}>2021</h2>
-          <p className={galleryStyles.gridCaption}>This was the first year that the hackathon went online.</p>
+          <p className={galleryStyles.gridCaption}>This was the first year that the hackathon went online</p>
           <div className={galleryStyles.gridImages}>
             {array1.map((image, i) => (
+                <div className={galleryStyles.gridImage}>
+                  <Image
+                  src = {image}
+                  alt = "img"
+                  layout="fill"
+                  objectFit="cover">
+                  </Image>
+                </div>
+            ))}
+          </div>
+        </div>
+        <div className={galleryStyles.gridContainer}>
+          <h2 className={galleryStyles.gridTitle}>2019</h2>
+          <p className={galleryStyles.gridCaption}>A great year for the hackathon</p>
+          <div className={galleryStyles.gridImages}>
+            {array2.map((image, i) => (
                 <div className={galleryStyles.gridImage}>
                   <Image
                   src = {image}
