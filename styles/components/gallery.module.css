@@ -8,64 +8,57 @@
   text-shadow: -4px 3px #8e8e8e;
 }
 
-/*.mainBody {
-  background: #e1e1e1;
-  text-align: center;
-  height: 100vh;
-  color: black;
-  text-align: left;
-  padding: 5px 5rem;
-  display: grid;
-  
-}*/
-
 .mainBody {
   background: #e1e1e1;
   color: black;
 }
 
-.galleryContainer {
-  display: flex;
-  flex-direction: column;
+.gridTitle{
+  font-size: 90px; 
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  font-family: Aquire;
+  text-shadow: -4px 3px 3px #06ce77;
+  padding-bottom: 15px;
 }
 
-.leftSliderContainer {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-.date {
-  width: 40%;
-  background: -webkit-linear-gradient(#00b768, #f4e509);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.date h2 {
-  font-size: 100px;
-}
-.sliderCon {
-  width: 60%;
+.gridCaption{
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
   
 }
 
-.galleryContainer {
-  --swiper-navigation-color: -webkit-linear-gradient(#00b768, #f4e509);
-  --swiper-navigation-size: 23px;
+.gridImages{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 25px;
+  gap: 20px;
 }
 
-.prevEl{
-  border-radius: 20px;
-  width: 20px;
-  height: 20px;
-  color: black;
+.gridImage{
+  width: 450px;
+  height: 300px;
+  transition: 0.5s ease;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-radius: 0px;
+  overflow: hidden;
 }
 
-.prevArrow{
-  font-size: 34px;
+
+.gridImage:hover{
+  
+  box-shadow: 6px 5px 3px 0px #06ce77;
+-webkit-transform: translateX(-6px);
+transform: translateX(-6px);
+transition: .5s ease;
+
+  
 }
+
 
 
 

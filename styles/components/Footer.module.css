@@ -1,0 +1,16 @@
+.container {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.title {
+    font-size: 200%;
+    margin-bottom: 0;
+    font-family: Aquire;
+  }

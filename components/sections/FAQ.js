@@ -21,20 +21,11 @@ const questions = [
     answer:
       "To keep the competition fair, all code used in your project must be written at the hackathon.",
   },
-  {
-    question: "WHAT CAN I CREATE?",
-    answer:
-      "You can create anything you want, as long as your hack does not violate our code of conduct.",
-  },
-  {
-    question: "WHEN IS ATOMHACKS?",
-    answer: "To be determined!",
-  },
 ];
 
 const FAQ = () => {
   return (
-    <div className={faqStyles.FAQdiv}>
+    <div className={faqStyles.FAQdiv} id="faq">
       <div>
         <h1 className={faqStyles.title}>faq</h1>
       </div>
@@ -45,6 +36,24 @@ const FAQ = () => {
             <p className={faqStyles.answer}>{ques.answer}</p>
           </div>
         ))}
+        <div>
+          <h1 className={faqStyles.question}>WHAT CAN I CREATE?</h1>
+          <p className={faqStyles.answer}>
+            You can create anything you want, as long as your hack does not
+            violate our{" "}
+            <a
+              href="https://docs.google.com/document/d/1fMx-8iApjgRuAs0mH2T4yCz6WGrwTwNGHS854C-fmKQ/edit?usp=sharingcode"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <u>code of conduct.</u>
+            </a>{" "}
+          </p>
+        </div>
+        <div>
+          <h1 className={faqStyles.question}>WHEN IS ATOMHACKS?</h1>
+          <p className={faqStyles.answer}>March 26th, 2022!</p>
+        </div>
       </div>
     </div>
   );

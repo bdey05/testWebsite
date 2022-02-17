@@ -5,10 +5,9 @@ import Link from "next/link";
 const routes = [
   { name: "Home", href: "/#home", current: false },
   { name: "About", href: "/#about", current: false },
+  { name: "FAQ", href: "/#faq", current: false },
   { name: "Sponsors", href: "/#sponsors", current: false },
   { name: "Schedule", href: "/#schedule", current: false },
-  { name: "Team", href: "/#team", current: false },
-  { name: "FAQ", href: "/#faq", current: false },
 ];
 
 const Nav = () => {

@@ -2,6 +2,7 @@ import '@styles/globals.css'
 import Nav from '@components/Nav.js';
 
 import { withRouter } from 'next/router'
+import Footer from '@components/Footer';
 
 function MyApp({ Component, pageProps, router }) {
   /* I found this necessary to implement because I wanted to add a custom background
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps, router }) {
           <Nav />
         </div>
         <Component {...pageProps} /></div>
+        <Footer />
     </>
   );
 }

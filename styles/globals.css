@@ -21,8 +21,8 @@ body {
 }
 
 :root {
-  --primary-color: #029c59;
-  --background-color: #fff;
+  --primary-color: rgb(38, 153, 90);
+  --background-color: #f1f4f9;
   --primary-text-color: #000;
   --secondary-text-color: #fff;
 }
