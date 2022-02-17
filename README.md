@@ -17,3 +17,5 @@ Start the development server:
     $ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+[![Powered by vercel](https://atomhacks-website.vercel.app/images/footer-icons/powered-by-vercel.svg)](https://vercel.com/dashboard?utm_source=atomhacks-website&utm_campaign=oss)
