@@ -32,7 +32,10 @@
 
 .gridImages{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  align-items: center;
+  justify-content: center;
   padding: 45px;
   padding-top: 35px;
   gap: 20px;
@@ -58,6 +61,10 @@ transform: translateX(-6px);
 transition: .5s ease;
 
   
+}
+
+@media (min-width: 600px) {
+  .gridImages { grid-template-columns: repeat(300px, 1fr); }
 }
 
 
